@@ -1,0 +1,30 @@
+.Footer{
+    background: black;
+    height: 20vh;
+   
+}
+.footerIcons{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerIcons i {
+    transition: all .2s ease-in-out !important; 
+    cursor: pointer;
+    margin: 1vw;
+    color: aliceblue;
+
+}
+
+.footerIcons i:hover{
+    transform: scale(1.1); 
+}
+
+.copy{
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 1vh;
+}
