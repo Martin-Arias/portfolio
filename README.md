@@ -14,5 +14,5 @@ https://martin-arias.github.io/portfolio/
 - React
 - Material UI
 
-### Ilustraciones 
+### Ilustraciones: 
 https://undraw.co/illustrations
