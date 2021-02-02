@@ -10,6 +10,7 @@ https://martin-arias.github.io/portfolio/
 
 - HTML
 - CSS
+- JavaScript ES6
 - React
 - Material UI
 
