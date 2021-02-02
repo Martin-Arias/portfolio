@@ -37,6 +37,21 @@
     line-height: 32px;
     margin-bottom: 48px;
 }
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+.icons svg {
+    margin-right:8%;
+}
+
+.upBtn{
+    position: fixed;
+    top: 93%;
+    left: 93%;
+    color: #ff5360;
+}
 }
 
 
@@ -72,5 +87,16 @@
         margin-bottom: 48px;
     }
 
+    .icons {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15%;
+    }
+    .icons svg {
+        margin-right:8%;
+    }
+    .upBtn{
+        display: none;
+    }
 
 }

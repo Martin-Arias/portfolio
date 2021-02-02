@@ -1,9 +1,9 @@
 import React from 'react'
-import './Proyectos.css'
+import '../styles/Proyectos.css'
 
-import siono from '../siono.png'
-import celebration from '../Celebration.png'
-import sugarboo from '../sugarboo.png'
+import siono from '../img/siono.png'
+import celebration from '../img/Celebration.png'
+import sugarboo from '../img/sugarboo.png'
 
 import Proyecto from './Proyecto';
 
@@ -16,9 +16,9 @@ export const Proyectos = () => {
             </section>
 
              <section className="projectSection">
-             <Proyecto titulo="Siono" descripcion="lorem ipsumlorem ipsumlorem ipsumlorem ipsum" imagen={siono} url="https://siono.io"/>
-             <Proyecto titulo="Celebration Company Ecommerce" descripcion="lorem ipsum" imagen={celebration} url="https://store.celebrationcompany.org/"/>
-             <Proyecto titulo="Sugarboo Ecommerce" descripcion="lorem ipsum" imagen={sugarboo} url="https://www.sugarbooandco.com/"/>
+             <Proyecto titulo="Siono Website" descripcion="" imagen={siono} url="https://siono.io"/>
+             <Proyecto titulo="Celebration Company Ecommerce" descripcion="" imagen={celebration} url="https://store.celebrationcompany.org/"/>
+             <Proyecto titulo="Sugarboo Ecommerce" descripcion="" imagen={sugarboo} url="https://www.sugarbooandco.com/"/>
 
             
             </section> 

@@ -1,10 +1,9 @@
-.Footer{
+.footer{
     background: black;
-    height: 20vh;
+    height: 15%;
    
 }
 .footerIcons{
-    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,5 +25,25 @@
     color: aliceblue;
     background-color: black;
     text-align: center;
-    margin-bottom: 1vh;
+}
+.more{
+
+     color:#e94560 ;
+     text-align:center; 
+     padding: 2% 0 0;
+     font-size: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .more{
+
+        color:#e94560;
+        text-align:center; 
+        padding: 4% 0 4%;
+   }
+    .footerIcons{
+        padding: 0 0 5%;
+    }
+
 }

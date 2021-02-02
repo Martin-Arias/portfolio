@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import './NavBar.css'
+
+import '../styles/NavBar.css'
 export const NavBar = () => {
 
     const [state, setstate] = useState(false)
@@ -19,7 +20,7 @@ export const NavBar = () => {
           <li><i className=" close fas fa-times" onClick={ handleClick }></i></li>
           <li><a href="#main"  onClick={ handleClick }>Acerca de mi</a></li>
           <li><a href="#projects"  onClick={ handleClick }>Proyectos</a></li>
-          <li><a href="#projects"  onClick={ handleClick } >Contacto</a> </li>
+          <li><a href="#contact"  onClick={ handleClick } >Contacto</a> </li>
         
         </ul>   
         <i className="burger fas fa-bars fa-2x" onClick={ handleClick }></i>

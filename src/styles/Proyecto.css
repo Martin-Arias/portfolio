@@ -4,19 +4,25 @@
 
 }
 
+
 .MuiCard-root {
     overflow: hidden;
     max-width: 15% !important;
     margin: 2%;
-    transition: all .4s ease-in-out !important; 
-    
+    transition: all .4s ease-in-out !important;
+
 }
 
-.MuiCard-root:hover{ transform: scale(1.1); }
+.MuiCard-root:hover {
+    transform: scale(1.1);
+}
 
 .MuiCardActionArea-root {
-   
+
     height: 85%;
+}
+.MuiButton-textPrimary {
+    color: #e91e63 !important;
 }
 
 @media only screen and (max-width: 767px) {
@@ -25,13 +31,15 @@
         overflow: hidden;
         max-width: 80% !important;
         margin: 4%;
-        transition: all .4s ease-in-out !important; 
-        
+        transition: all .4s ease-in-out !important;
+
     }
-    
-    .MuiCard-root:hover{ transform: scale(1.1); }
-    
-    
+
+    .MuiCard-root:hover {
+        transform: scale(1.1);
+    }
+
+
 
 
 }

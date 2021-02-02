@@ -1,5 +1,5 @@
 import React from 'react'
-import './Separador.css'
+import '../styles/Separador.css'
 export const Separador = () => {
     return (
         <>
