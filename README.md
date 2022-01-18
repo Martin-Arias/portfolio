@@ -13,6 +13,3 @@ https://martin-arias.github.io/portfolio/
 - JavaScript ES6
 - React
 - Material UI
-
-### Ilustraciones: 
-https://undraw.co/illustrations
