@@ -1,12 +1,156 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Hello, World!</title>
-	</head>
-	<body>
-		<h1 id="heading">Hello, World!</h1>
-		<p>This page comes from a static asset stored at `public/index.html` as configured in `wrangler.jsonc`.</p>
-	</body>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Martin Arias — Software developer</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
+	<link href="index.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<div class="global">
+			<div class="html w-embed">
+				<style>
+					/* ALL PAGES CSS */
+					* {
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+					}
+
+					body {
+						font-size: 1.1111111111111112vw;
+					}
+
+					/* Max Font Size */
+					@media screen and (min-width:1920px) {
+						body {
+							font-size: 1.3333333333333333rem;
+						}
+					}
+
+					/* Container Max Width */
+					.container {
+						max-width: 90em;
+					}
+
+					/* Min Font Size */
+					@media screen and (max-width:768px) {
+						body {
+							font-size: 0.5333333333333333rem;
+						}
+					}
+
+					@media screen and (max-width:1280px) {
+						header {
+							font-size: 0.888888888888889rem;
+						}
+					}
+
+
+					/* Main Variables */
+					:root {
+						--main-dark: black;
+						--main-light: white;
+					}
+
+					/* Global Styles */
+					::selection {
+						background: var(--main-dark);
+						color: var(--main-light);
+						text-shadow: none;
+					}
+
+					img::selection,
+					svg::selection {
+						background: transparent;
+					}
+
+					/*Reset buttons, and links styles*/
+					a {
+						color: inherit;
+						text-decoration: inherit;
+					}
+
+					/*Hide focus outline for main content element*/
+					main:focus-visible {
+						outline: -webkit-focus-ring-color auto 0px;
+					}
+
+
+					.hero-circle {
+						stroke-width: 0.25rem;
+					}
+
+					@media (min-width: 768px) {
+						.hero-intro-text {
+							font-size: clamp(1rem, 1.46em, 1.5rem);
+						}
+					}
+
+					@media screen and (max-width:1280px) {
+						.header {
+							font-size: 0.888888888888889rem;
+						}
+					}
+				</style>
+			</div>
+		</div>
+		<header class="header">
+			<div class="page-padding">
+				<div class="container">
+					<div class="header-inner">
+						<a href="#" class="header-logo">
+							<div>MA—25</div>
+						</a>
+						<a href="mailto:arias95martin@gmail.com" class="header-button">
+							<div class="header-button-text">Contact</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main-wrapper">
+			<section class="section-hero">
+				<div class="page-padding">
+					<div class="hero-container container">
+						<div class="hero-heading-wrapper w-embed">
+							<h1 class="hero-heading">
+								<span class="herow line-1">
+									<span class="split-words">Martin Arias</span>
+								</span>
+								<span class="herow">
+									<span class="split-words">Software Developer</span>
+								</span>
+							</h1>
+						</div>
+						<div class="hero-intro">
+							<div class="hero-intro-text"">I'm Martin Arias, a software developer from
+								Argentina with over 5 years of experience building scalable, cloud-native
+								applications. I
+								specialize in backend development with Go, and modern web interfaces using
+								JavaScript/TypeScript and React.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class=" section-cta">
+								<div class="button-centered">
+									<a href="mailto:arias95martin@gmail.com" class="button">
+										<div class="header-button-text">Get in touch</div>
+									</a>
+								</div>
+
+			</section>
+		</main>
+	</div>
+
+</body>
+
 </html>
