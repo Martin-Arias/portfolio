@@ -15,7 +15,7 @@
 	
 	"routes": [
 		{
-		"pattern": "armartin.dev",
+		"pattern": "www.armartin.dev",
 		"custom_domain": true
 		}
 	]
