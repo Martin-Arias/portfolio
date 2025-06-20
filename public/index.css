@@ -310,21 +310,6 @@ h1 {
   color: var(--light-grey);
 }
 
-.hero-intro-text {
-  letter-spacing: 0.02em;
-  font-size: 1.46em;
-}
-
-.hero-intro {
-  width: 32em;
-  min-width: 460px;
-  max-width: 100%;
-}
-
-.hero-intro_line {
-  overflow: hidden;
-}
-
 .button {
   border: 1px solid var(--black);
   text-transform: uppercase;
@@ -427,16 +412,6 @@ h1 {
 
   .hero-heading-wrapper {
     font-size: 1.29205vw;
-  }
-
-  .hero-intro-text {
-    font-size: 1rem;
-  }
-
-  .hero-intro {
-    width: 100%;
-    min-width: 0;
-    max-width: 52em;
   }
 
   .button {

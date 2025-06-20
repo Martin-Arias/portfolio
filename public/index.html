@@ -34,6 +34,21 @@
 						font-size: 1.1111111111111112vw;
 					}
 
+					.hero-intro-text {
+						letter-spacing: 0.02em;
+						font-size: 1.46em;
+					}
+
+					.hero-intro {
+						width: 32em;
+						min-width: 460px;
+						max-width: 100%;
+					}
+
+					.hero-intro_line {
+						overflow: hidden;
+					}
+
 					/* Max Font Size */
 					@media screen and (min-width:1920px) {
 						body {
@@ -99,6 +114,12 @@
 					@media (min-width: 768px) {
 						.hero-intro-text {
 							font-size: clamp(1rem, 1.46em, 1.5rem);
+						}
+
+						.hero-intro {
+							width: 100%;
+							min-width: 0;
+							max-width: 52em;
 						}
 					}
 				</style>
