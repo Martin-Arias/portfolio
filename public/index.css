@@ -414,16 +414,6 @@ h1 {
     font-size: 1.29205vw;
   }
 
-  .hero-intro-text {
-    font-size: 1rem;
-  }
-
-  .hero-intro {
-    width: 100%;
-    min-width: 0;
-    max-width: 52em;
-  }
-
   .button {
     font-size: 2em;
   }
