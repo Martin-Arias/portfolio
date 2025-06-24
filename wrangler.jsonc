@@ -17,6 +17,10 @@
 		{
 		"pattern": "www.armartin.dev",
 		"custom_domain": true
+		},
+		{
+			"pattern": "armartin.dev",
+			"custom_domain": true
 		}
 	]
 	  
