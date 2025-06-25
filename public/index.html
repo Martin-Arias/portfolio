@@ -21,120 +21,104 @@
 
 <body>
 	<div class="page-wrapper">
-		<div class="global">
-			<div class="html w-embed">
-				<style>
-					/* ALL PAGES CSS */
-					* {
-						-webkit-font-smoothing: antialiased;
-						-moz-osx-font-smoothing: grayscale;
-					}
+		<div class="html">
+			<style>
+				/* ALL PAGES CSS */
+				* {
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+				}
 
+				body {
+					font-size: 1.1111111111111112vw;
+				}
+
+				.hero-intro-text {
+					letter-spacing: 0.02em;
+					font-size: 1.46em;
+				}
+
+				.hero-intro {
+					width: 32em;
+					min-width: 460px;
+					max-width: 100%;
+				}
+
+				/* Max Font Size */
+				@media screen and (min-width:1920px) {
 					body {
-						font-size: 1.1111111111111112vw;
+						font-size: 1.3333333333333333rem;
+					}
+				}
+
+				/* Container Max Width */
+				.container {
+					max-width: 90em;
+				}
+
+				/* Min Font Size */
+				@media screen and (max-width:768px) {
+					body {
+						font-size: 0.5333333333333333rem;
 					}
 
 					.hero-intro-text {
-						letter-spacing: 0.02em;
-						font-size: 1.46em;
+						font-size: 1rem;
 					}
 
 					.hero-intro {
-						width: 32em;
-						min-width: 460px;
-						max-width: 100%;
+						width: 100%;
+						min-width: 0;
+						max-width: 52em;
 					}
+				}
 
-					.hero-intro_line {
-						overflow: hidden;
+				@media screen and (max-width:1280px) {
+
+					.header,
+					header {
+						font-size: 0.888888888888889rem;
 					}
+				}
 
-					/* Max Font Size */
-					@media screen and (min-width:1920px) {
-						body {
-							font-size: 1.3333333333333333rem;
-						}
+
+				/* Main Variables */
+				:root {
+					--main-dark: black;
+					--main-light: white;
+				}
+
+				/* Global Styles */
+				::selection {
+					background: var(--main-dark);
+					color: var(--main-light);
+					text-shadow: none;
+				}
+
+				svg::selection {
+					background: transparent;
+				}
+
+				/*Reset buttons, and links styles*/
+				a {
+					color: inherit;
+					text-decoration: inherit;
+				}
+
+				@media (min-width: 768px) {
+					.hero-intro-text {
+						font-size: clamp(1rem, 1.46em, 1.5rem);
 					}
-
-					/* Container Max Width */
-					.container {
-						max-width: 90em;
-					}
-
-					/* Min Font Size */
-					@media screen and (max-width:768px) {
-						body {
-							font-size: 0.5333333333333333rem;
-						}
-
-						.hero-intro-text {
-							font-size: 1rem;
-						}
-
-						.hero-intro {
-							width: 100%;
-							min-width: 0;
-							max-width: 52em;
-						}
-					}
-
-					@media screen and (max-width:1280px) {
-
-						.header,
-						header {
-							font-size: 0.888888888888889rem;
-						}
-					}
-
-
-					/* Main Variables */
-					:root {
-						--main-dark: black;
-						--main-light: white;
-					}
-
-					/* Global Styles */
-					::selection {
-						background: var(--main-dark);
-						color: var(--main-light);
-						text-shadow: none;
-					}
-
-					img::selection,
-					svg::selection {
-						background: transparent;
-					}
-
-					/*Reset buttons, and links styles*/
-					a {
-						color: inherit;
-						text-decoration: inherit;
-					}
-
-					/*Hide focus outline for main content element*/
-					main:focus-visible {
-						outline: -webkit-focus-ring-color auto 0px;
-					}
-
-
-					.hero-circle {
-						stroke-width: 0.25rem;
-					}
-
-					@media (min-width: 768px) {
-						.hero-intro-text {
-							font-size: clamp(1rem, 1.46em, 1.5rem);
-						}
-					}
-				</style>
-			</div>
+				}
+			</style>
 		</div>
+
 		<header class="header">
 			<div class="page-padding">
 				<div class="container">
 					<div class="header-inner">
 						<a href="#" class="header-logo">
-							<div>MA—25</div>
+							<div>MA</div>
 						</a>
 						<a href="mailto:arias95martin@gmail.com" class="header-button">
 							<div class="header-button-text">Contact</div>
@@ -147,37 +131,37 @@
 			<section class="section-hero">
 				<div class="page-padding">
 					<div class="hero-container container">
-						<div class="hero-heading-wrapper w-embed">
+						<div class="hero-heading-wrapper">
 							<h1 class="hero-heading">
 								<span class="herow line-1">
-									<span class="split-words">Martin Arias</span>
+									Martin Arias
 								</span>
-								<span class="herow">
-									<span class="split-words">Software Developer</span>
+								<span class="herow" style="font-style: italic;">
+									Software Developer
 								</span>
 							</h1>
 						</div>
 						<div class="hero-intro">
-							<div class="hero-intro-text"">I'm Martin Arias, a software developer from
+							<div class="hero-intro-text">I'm Martin Arias, a software developer from
 								Argentina with over 5 years of experience building scalable, cloud-native
 								applications. I
 								specialize in backend development with Go, and modern web interfaces using
-								JavaScript/TypeScript and React.</div>
+								TypeScript and React.</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<div class=" page-padding">
-								<hr style=" border-top:1px solid black;">
-							</div>
+			<div class="page-padding">
+				<hr style=" border-top:2px solid var(--black);">
+			</div>
 
-							<section class=" section-cta">
-								<div class="button-centered">
-									<a href="mailto:arias95martin@gmail.com" class="button">
-										<div class="header-button-text">Get in touch</div>
-									</a>
-								</div>
-							</section>
+			<section class="section-cta">
+				<div class="button-centered">
+					<a href="https://www.linkedin.com/in/arias-martin" target="_blank" class="button">
+						<div class="button-text">Connect</div>
+					</a>
+				</div>
+			</section>
 		</main>
 	</div>
 </body>
